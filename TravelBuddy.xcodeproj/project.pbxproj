@@ -14,6 +14,14 @@
 		E4897B1C29EE835900CD9712 /* TravelBuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4897B1B29EE835900CD9712 /* TravelBuddyTests.swift */; };
 		E4897B2629EE835900CD9712 /* TravelBuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4897B2529EE835900CD9712 /* TravelBuddyUITests.swift */; };
 		E4897B2829EE835900CD9712 /* TravelBuddyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4897B2729EE835900CD9712 /* TravelBuddyUITestsLaunchTests.swift */; };
+		E4897B3829EE865900CD9712 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4897B3729EE865900CD9712 /* LoginView.swift */; };
+		E4897B3B29EF033100CD9712 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E4897B3A29EF033100CD9712 /* FirebaseAuth */; };
+		E4897B3D29EF033100CD9712 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E4897B3C29EF033100CD9712 /* FirebaseFirestore */; };
+		E4897B3F29EF041E00CD9712 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4897B3E29EF041E00CD9712 /* GoogleService-Info.plist */; };
+		E4897B4129EF056000CD9712 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4897B4029EF056000CD9712 /* LoginViewModel.swift */; };
+		E4897B4329EF0BCA00CD9712 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4897B4229EF0BCA00CD9712 /* RootViewModel.swift */; };
+		E4897B4529EF0E4300CD9712 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4897B4429EF0E4300CD9712 /* RootView.swift */; };
+		E4897B4729EF0E7A00CD9712 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4897B4629EF0E7A00CD9712 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,12 @@
 		E4897B2129EE835900CD9712 /* TravelBuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelBuddyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4897B2529EE835900CD9712 /* TravelBuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelBuddyUITests.swift; sourceTree = "<group>"; };
 		E4897B2729EE835900CD9712 /* TravelBuddyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelBuddyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E4897B3729EE865900CD9712 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E4897B3E29EF041E00CD9712 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E4897B4029EF056000CD9712 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		E4897B4229EF0BCA00CD9712 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		E4897B4429EF0E4300CD9712 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		E4897B4629EF0E7A00CD9712 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4897B3B29EF033100CD9712 /* FirebaseAuth in Frameworks */,
+				E4897B3D29EF033100CD9712 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +111,11 @@
 			isa = PBXGroup;
 			children = (
 				E4897B0A29EE835800CD9712 /* TravelBuddyApp.swift */,
-				E4897B0C29EE835800CD9712 /* ContentView.swift */,
+				E4897B3629EE856900CD9712 /* Models */,
+				E4897B3529EE855F00CD9712 /* Views */,
+				E4897B3429EE854F00CD9712 /* ViewModels */,
 				E4897B0E29EE835900CD9712 /* Assets.xcassets */,
+				E4897B3E29EF041E00CD9712 /* GoogleService-Info.plist */,
 				E4897B1029EE835900CD9712 /* Preview Content */,
 			);
 			path = TravelBuddy;
@@ -127,6 +146,33 @@
 			path = TravelBuddyUITests;
 			sourceTree = "<group>";
 		};
+		E4897B3429EE854F00CD9712 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E4897B4029EF056000CD9712 /* LoginViewModel.swift */,
+				E4897B4229EF0BCA00CD9712 /* RootViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E4897B3529EE855F00CD9712 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E4897B0C29EE835800CD9712 /* ContentView.swift */,
+				E4897B3729EE865900CD9712 /* LoginView.swift */,
+				E4897B4429EF0E4300CD9712 /* RootView.swift */,
+				E4897B4629EF0E7A00CD9712 /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E4897B3629EE856900CD9712 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +189,10 @@
 			dependencies = (
 			);
 			name = TravelBuddy;
+			packageProductDependencies = (
+				E4897B3A29EF033100CD9712 /* FirebaseAuth */,
+				E4897B3C29EF033100CD9712 /* FirebaseFirestore */,
+			);
 			productName = TravelBuddy;
 			productReference = E4897B0729EE835800CD9712 /* TravelBuddy.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +265,9 @@
 				Base,
 			);
 			mainGroup = E4897AFE29EE835800CD9712;
+			packageReferences = (
+				E4897B3929EF033100CD9712 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = E4897B0829EE835800CD9712 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4897B1229EE835900CD9712 /* Preview Assets.xcassets in Resources */,
+				E4897B3F29EF041E00CD9712 /* GoogleService-Info.plist in Resources */,
 				E4897B0F29EE835900CD9712 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +311,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4897B4329EF0BCA00CD9712 /* RootViewModel.swift in Sources */,
+				E4897B4729EF0E7A00CD9712 /* MainView.swift in Sources */,
+				E4897B4129EF056000CD9712 /* LoginViewModel.swift in Sources */,
+				E4897B4529EF0E4300CD9712 /* RootView.swift in Sources */,
+				E4897B3829EE865900CD9712 /* LoginView.swift in Sources */,
 				E4897B0D29EE835800CD9712 /* ContentView.swift in Sources */,
 				E4897B0B29EE835800CD9712 /* TravelBuddyApp.swift in Sources */,
 			);
@@ -583,6 +642,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E4897B3929EF033100CD9712 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E4897B3A29EF033100CD9712 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4897B3929EF033100CD9712 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		E4897B3C29EF033100CD9712 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4897B3929EF033100CD9712 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E4897AFF29EE835800CD9712 /* Project object */;
 }
