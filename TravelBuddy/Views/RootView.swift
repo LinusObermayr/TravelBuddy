@@ -15,7 +15,7 @@ struct RootView: View {
         
         if viewModel.userIsLoggedIn {
            // MainView(rootViewModel: viewModel) //ändra denna till main för att gå dit efter inlogg
-            MainView()
+            ContentView()
             }
         else {
             LoginView(rootViewModel: viewModel)

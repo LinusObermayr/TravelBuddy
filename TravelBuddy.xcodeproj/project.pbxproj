@@ -22,6 +22,10 @@
 		E4897B4329EF0BCA00CD9712 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4897B4229EF0BCA00CD9712 /* RootViewModel.swift */; };
 		E4897B4529EF0E4300CD9712 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4897B4429EF0E4300CD9712 /* RootView.swift */; };
 		E4897B4729EF0E7A00CD9712 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4897B4629EF0E7A00CD9712 /* MainView.swift */; };
+		E4897B4929F1415600CD9712 /* PacklistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4897B4829F1415600CD9712 /* PacklistView.swift */; };
+		E4897B4B29F1419B00CD9712 /* AddTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4897B4A29F1419B00CD9712 /* AddTripView.swift */; };
+		E4897B4D29F16C5300CD9712 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4897B4C29F16C5300CD9712 /* AccountView.swift */; };
+		E4897B4F29F18C9500CD9712 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4897B4E29F18C9500CD9712 /* AccountViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		E4897B4229EF0BCA00CD9712 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		E4897B4429EF0E4300CD9712 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		E4897B4629EF0E7A00CD9712 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E4897B4829F1415600CD9712 /* PacklistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacklistView.swift; sourceTree = "<group>"; };
+		E4897B4A29F1419B00CD9712 /* AddTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripView.swift; sourceTree = "<group>"; };
+		E4897B4C29F16C5300CD9712 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		E4897B4E29F18C9500CD9712 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +159,7 @@
 			children = (
 				E4897B4029EF056000CD9712 /* LoginViewModel.swift */,
 				E4897B4229EF0BCA00CD9712 /* RootViewModel.swift */,
+				E4897B4E29F18C9500CD9712 /* AccountViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -162,6 +171,9 @@
 				E4897B3729EE865900CD9712 /* LoginView.swift */,
 				E4897B4429EF0E4300CD9712 /* RootView.swift */,
 				E4897B4629EF0E7A00CD9712 /* MainView.swift */,
+				E4897B4829F1415600CD9712 /* PacklistView.swift */,
+				E4897B4A29F1419B00CD9712 /* AddTripView.swift */,
+				E4897B4C29F16C5300CD9712 /* AccountView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -313,7 +325,11 @@
 			files = (
 				E4897B4329EF0BCA00CD9712 /* RootViewModel.swift in Sources */,
 				E4897B4729EF0E7A00CD9712 /* MainView.swift in Sources */,
+				E4897B4B29F1419B00CD9712 /* AddTripView.swift in Sources */,
 				E4897B4129EF056000CD9712 /* LoginViewModel.swift in Sources */,
+				E4897B4D29F16C5300CD9712 /* AccountView.swift in Sources */,
+				E4897B4F29F18C9500CD9712 /* AccountViewModel.swift in Sources */,
+				E4897B4929F1415600CD9712 /* PacklistView.swift in Sources */,
 				E4897B4529EF0E4300CD9712 /* RootView.swift in Sources */,
 				E4897B3829EE865900CD9712 /* LoginView.swift in Sources */,
 				E4897B0D29EE835800CD9712 /* ContentView.swift in Sources */,

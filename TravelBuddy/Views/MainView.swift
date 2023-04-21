@@ -34,8 +34,8 @@ struct MainView: View {
         
         ZStack {
             NavigationView {
-                        ScrollView(.vertical) {
-                            VStack {
+                    ScrollView(.vertical) {
+                        VStack{
                                 ForEach(items) { item in
                                     NavigationLink(destination: DetailView(item: item)) {
                                         VStack(spacing: 10) {
@@ -51,29 +51,31 @@ struct MainView: View {
                                                 .foregroundColor(.black)
                                             Text(item.date)
                                                 .font(.subheadline)
-                                                .padding(-20)
+                                                .padding(-25)
                                                 .foregroundColor(.black)
+                                                
                                         }
                                         .frame(width: 360, height: 320)
                                         .background(Color.brown.opacity(0.7))
                                         .cornerRadius(10)
                                         .padding(2)
+                                        
                                     }
                                 }
                             }
                         }
+                        .frame(width: 360, height: 580)
                         .navigationBarTitle(Text("Resor"))
-                        .offset(x:0, y: 60)
-                        .padding(.top, -30)
-                        .padding(.bottom, 100)
+                        .offset(x:0, y: 40)
+                        .padding(.top, -50)
+                        .padding(.bottom, 0)
                         
-            }.padding(.top, 40)
-            .offset(x:0, y:-80)
+            }.padding(.top, 20)
+              
+            .offset(x:0, y:-50)
         }
 
-        TabView{
-            
-        }
+      
     }
     
    /* func logout(){
