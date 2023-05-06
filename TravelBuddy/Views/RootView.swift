@@ -12,6 +12,7 @@ struct RootView: View {
     @StateObject private var viewModel = RootViewModel()
     
     var body: some View {
+       
         
         if viewModel.userIsLoggedIn {
            // MainView(rootViewModel: viewModel) //ändra denna till main för att gå dit efter inlogg

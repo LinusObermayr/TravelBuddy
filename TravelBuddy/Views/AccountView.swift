@@ -9,13 +9,28 @@ import SwiftUI
 
 struct AccountView: View {
     
+   // @EnvironmentObject var viewModel = AccountViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+          Button(action: {
+              //logout()
+          }
+                 , label: {
+              Text("Log out")
+                  .foregroundColor(.black)
+                  .padding(.vertical, 10)
+                  .frame(width: 200, height:40)
+                  .background(
+                      RoundedRectangle(cornerRadius: 10, style: .continuous)
+                          .fill(.linearGradient(colors: [.brown], startPoint: .bottom, endPoint: .topTrailing))
+              
+      )})
     }
 }
-
+/*
 struct AccountView_Previews: PreviewProvider {
     static var previews: some View {
         AccountView()
     }
 }
+*/

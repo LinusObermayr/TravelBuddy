@@ -9,7 +9,7 @@ import SwiftUI
 import Firebase
 
 struct MainView: View {
-   // @ObservedObject var rootViewModel: RootViewModel
+   
     let items = [
            Item(image: "copenhagen", title: "Köpenhamn", date: "September 1, 2023"),
            Item(image: "london", title: "London", date: "Maj 3, 2024"),
@@ -18,20 +18,7 @@ struct MainView: View {
        ]
    
     var body: some View {
-      /*  Button(action: {
-            logout()
-        }
-               , label: {
-            Text("Log out")
-                .foregroundColor(.black)
-                .padding(.vertical, 10)
-                .frame(width: 200, height:40)
-                .background(
-                    RoundedRectangle(cornerRadius: 10, style: .continuous)
-                        .fill(.linearGradient(colors: [.brown], startPoint: .bottom, endPoint: .topTrailing))
-            
-    )})*/
-        
+      
         ZStack {
             NavigationView {
                     ScrollView(.vertical) {
@@ -106,7 +93,7 @@ struct DetailView: View {
                 
             Spacer()
         }
-        .navigationBarTitle(item.title)
+        //.navigationBarTitle(item.title)
         
     }
 }

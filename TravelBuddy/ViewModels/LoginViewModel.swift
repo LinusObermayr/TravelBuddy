@@ -12,6 +12,7 @@ import SwiftUI
 final class LoginViewModel: ObservableObject {
     @Published var email=""
     @Published var password=""
+    @Published var userIsLoggedIn = false
     
     
     func login(){
